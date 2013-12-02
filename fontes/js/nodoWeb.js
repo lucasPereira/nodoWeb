@@ -49,9 +49,9 @@ function responderArquivo(resposta, caminho) {
 }
 
 function responder200(resposta, arquivo, tipoDeMidia) {
-		resposta.statusCode = 200;
-		resposta.setHeader("Content-Type", tipoDeMidia);
-		resposta.end(arquivo);
+	resposta.statusCode = 200;
+	resposta.setHeader("Content-Type", tipoDeMidia);
+	resposta.end(arquivo);
 }
 
 function responder404(resposta, caminho) {
